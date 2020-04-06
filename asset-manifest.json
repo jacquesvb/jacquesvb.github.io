@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/jacquesvb.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/jacquesvb.github.io/static/js/main.cfe09ee7.chunk.js",
+    "main.js.map": "/jacquesvb.github.io/static/js/main.cfe09ee7.chunk.js.map",
+    "runtime-main.js": "/jacquesvb.github.io/static/js/runtime-main.229c3366.js",
+    "runtime-main.js.map": "/jacquesvb.github.io/static/js/runtime-main.229c3366.js.map",
+    "static/js/2.e310b272.chunk.js": "/jacquesvb.github.io/static/js/2.e310b272.chunk.js",
+    "static/js/2.e310b272.chunk.js.map": "/jacquesvb.github.io/static/js/2.e310b272.chunk.js.map",
+    "index.html": "/jacquesvb.github.io/index.html",
+    "precache-manifest.00b0fd14d61456986a89c9ff9317ddd7.js": "/jacquesvb.github.io/precache-manifest.00b0fd14d61456986a89c9ff9317ddd7.js",
+    "service-worker.js": "/jacquesvb.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/jacquesvb.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.e310b272.chunk.js.LICENSE.txt": "/jacquesvb.github.io/static/js/2.e310b272.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/jacquesvb.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.229c3366.js",
+    "static/js/2.e310b272.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.cfe09ee7.chunk.js"
+  ]
+}
