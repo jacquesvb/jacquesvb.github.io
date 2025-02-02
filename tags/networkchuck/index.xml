@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networkchuck on Blog site of Jacques Van Blokland</title>
+    <link>//localhost:1313/tags/networkchuck/</link>
+    <description>Recent content in Networkchuck on Blog site of Jacques Van Blokland</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/networkchuck/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Blog</title>
+      <link>//localhost:1313/posts/test-blog/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/test-blog/</guid>
+      <description>&lt;h1 id=&#34;obsidian&#34;&gt;Obsidian&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Obsidian is the BEST notes application in the world. Go download it: &lt;a href=&#34;https://obsidian.md/&#34;&gt;https://obsidian.md/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create the new folder labeled &lt;em&gt;posts&lt;/em&gt;. This is where you will add your blog posts&lt;/li&gt;&#xA;&lt;li&gt;&amp;hellip;.that&amp;rsquo;s all you have to do&lt;/li&gt;&#xA;&lt;li&gt;Actually&amp;hellip;wait&amp;hellip;find out where your Obsidian directories are. Right click your &lt;em&gt;posts&lt;/em&gt; folder and choose &lt;em&gt;show in system explorer&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;You will need this directory in upcoming steps&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
