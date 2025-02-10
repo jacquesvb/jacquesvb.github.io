@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Website of Jacques Van Blokland</title>
+    <link>https://jacquesvb.github.io/tags/</link>
+    <description>Recent content in Tags on Website of Jacques Van Blokland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jacquesvb.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogging</title>
+      <link>https://jacquesvb.github.io/tags/blogging/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/tags/blogging/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://jacquesvb.github.io/tags/hugo/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/tags/hugo/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Obsidian</title>
+      <link>https://jacquesvb.github.io/tags/obsidian/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/tags/obsidian/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://jacquesvb.github.io/tags/blog/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/tags/blog/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Networkchuck</title>
+      <link>https://jacquesvb.github.io/tags/networkchuck/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/tags/networkchuck/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>

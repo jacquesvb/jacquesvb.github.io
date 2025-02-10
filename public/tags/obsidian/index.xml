@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obsidian on Website of Jacques Van Blokland</title>
+    <link>https://jacquesvb.github.io/tags/obsidian/</link>
+    <description>Recent content in Obsidian on Website of Jacques Van Blokland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jacquesvb.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Setup</title>
+      <link>https://jacquesvb.github.io/posts/blog-setup/</link>
+      <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacquesvb.github.io/posts/blog-setup/</guid>
+      <description>&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;p&gt;This setup is based on a video by &lt;a href=&#34;https://youtu.be/dnE7c0ELEH8?si=1HhRV-9FNEUe5GBB&#34;&gt;NetworkChuck&lt;/a&gt; and his &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;sample blog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow the instructions on the Hugo site to install Hugo on your dev system.&lt;/li&gt;
+&lt;li&gt;Create a new Hugo site and CD into that directory.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;git init&lt;/code&gt; to initialize a Git repo.&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt; and install a theme by following instructions for selected theme.&lt;/li&gt;
+&lt;li&gt;In Obsidian, create a &amp;ldquo;posts&amp;rdquo; folder to store your blog posts and an &amp;ldquo;attachments&amp;rdquo; folder to store images and other media.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content>&lt;h2 id=&#34;source&#34;&gt;Source&lt;/h2&gt;
+&lt;p&gt;This setup is based on a video by &lt;a href=&#34;https://youtu.be/dnE7c0ELEH8?si=1HhRV-9FNEUe5GBB&#34;&gt;NetworkChuck&lt;/a&gt; and his &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;sample blog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-setup&#34;&gt;The Setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Follow the instructions on the Hugo site to install Hugo on your dev system.&lt;/li&gt;
+&lt;li&gt;Create a new Hugo site and CD into that directory.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;git init&lt;/code&gt; to initialize a Git repo.&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt; and install a theme by following instructions for selected theme.&lt;/li&gt;
+&lt;li&gt;In Obsidian, create a &amp;ldquo;posts&amp;rdquo; folder to store your blog posts and an &amp;ldquo;attachments&amp;rdquo; folder to store images and other media.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
