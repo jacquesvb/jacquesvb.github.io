@@ -3,9 +3,9 @@ import re
 import shutil
 
 # Paths
-posts_dir = "/home/jacquesvb/Dropbox/JacquesVB-Blog/Blog/posts/"
+posts_dir = "/home/jacquesvb/Workspace/hugo/jacquesvb.github.io/content/posts"
 attachments_dir = "/home/jacquesvb/Dropbox/JacquesVB-Blog/Blog/attachments/"
-static_images_dir = "/home/jacquesvb/Workspace/hugo/jacquesvb/static/images/"
+static_images_dir = "/home/jacquesvb/Workspace/hugo/jacquesvb.github.io/static/images"
 
 
 # Step 1: Process each markdown file in the posts directory
