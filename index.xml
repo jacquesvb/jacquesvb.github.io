@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal</title>
+    <link>/</link>
+    <description>Recent content on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making a Bog Website</title>
+      <link>/posts/making-a-blog-website/</link>
+      <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/making-a-blog-website/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;The idea here is to create a blog based personal website that doesn&amp;rsquo;t cost anything but a bit of time and elbow grease.&lt;/p&gt;
+&lt;p&gt;This is the tech stack I&amp;rsquo;ll be using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; - A static website generator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; - Hosts the static website for free.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; - A note taking application used to create the blog posts and adds the Markdown for formatting.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; - I&amp;rsquo;m using cloud storage to keep things backed up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This solution could cost money if I want a custom domain name or need additional cloud storage,  but a decent site can be created gratis.&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;The idea here is to create a blog based personal website that doesn&amp;rsquo;t cost anything but a bit of time and elbow grease.&lt;/p&gt;
+&lt;p&gt;This is the tech stack I&amp;rsquo;ll be using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; - A static website generator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; - Hosts the static website for free.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt; - A note taking application used to create the blog posts and adds the Markdown for formatting.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; - I&amp;rsquo;m using cloud storage to keep things backed up.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This solution could cost money if I want a custom domain name or need additional cloud storage,  but a decent site can be created gratis.&lt;/p&gt;
+&lt;p&gt;The basic idea for this blog setup came from a tutorial by &lt;a href=&#34;https://youtu.be/dnE7c0ELEH8?si=r46KP3Ydwdom2U1z&#34;&gt;NetworkChuck&lt;/a&gt;. I&amp;rsquo;m only giving a general overview here, so check it out for more details.&lt;/p&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;h3 id=&#34;file-location&#34;&gt;File Location&lt;/h3&gt;
+&lt;p&gt;In Dropbox I created a folder called &lt;code&gt;Website&lt;/code&gt; where I will store all my files and they can live quite happily in the cloud.&lt;/p&gt;
+&lt;h3 id=&#34;generate-hugo-site&#34;&gt;Generate Hugo Site&lt;/h3&gt;
+&lt;p&gt;Inside that folder I generated my Hugo site using&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;nameofmysite&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Of course replacing &lt;code&gt;{nameofmysite}&lt;/code&gt; with the name of YOUR site.&lt;/p&gt;
+&lt;h3 id=&#34;hugo-needs-a-theme&#34;&gt;Hugo Needs a Theme&lt;/h3&gt;
+&lt;p&gt;Inside your newly created Hugo project, do a &lt;code&gt;git init&lt;/code&gt; to initiate a Git repository. Then find yourself a &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Theme&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Follow the installation directions associated with your chosen theme. Be aware that older themes may have issues with newer versions of Hugo.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m using the &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-terminal/&#34;&gt;Terminal&lt;/a&gt; theme, which can be installed using &lt;code&gt;git submodule&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now I open my site folder in my code editor and update the &lt;code&gt;hugo.toml&lt;/code&gt; file with the configuration recommended by the theme documentation.&lt;/p&gt;
+&lt;h3 id=&#34;testing&#34;&gt;Testing&lt;/h3&gt;
+&lt;p&gt;To make sure the site is working we run the Hugo server, remembering to specify our chosen theme.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo server -t terminal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Which results in&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ERROR deprecated: site config key paginate was deprecated in Hugo v0.128.0 and subsequently removed. Use pagination.pagerSize instead.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Remember what I said earlier about Hugo versions and themes? Even though the Terminal theme was updated just a few months ago, they still managed to slip in some breaking changes.&lt;/p&gt;
+&lt;p&gt;At least the error message is helpful. All I have to do is go into &lt;code&gt;hugo.tomal&lt;/code&gt; and replace &lt;code&gt;paginate&lt;/code&gt; with &lt;code&gt;pagination.pagerSize&lt;/code&gt;, rerun the server, and I&amp;rsquo;m good as gold!&lt;/p&gt;
+&lt;p&gt;In your browser, navigate to &lt;code&gt;localhost:1313&lt;/code&gt; and voila!&lt;br&gt;
+&lt;img src=&#34;/Attachments/Screenshot_2025-02-17_19-49-54.png&#34; alt=&#34;Screenshot\_2025-02-17\_19-49-54.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;posts&#34;&gt;Posts&lt;/h3&gt;
+&lt;p&gt;Now we want to be able to write our posts in Obsidian and then migrate them over to Hugo where it can be turned into a static website and sent to GitHub Pages.&lt;/p&gt;
+&lt;p&gt;In your Hugo code, create a posts directory under the content directory.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;jacques-blog
+		|
+		content
+			|
+			posts	
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;obsidian&#34;&gt;Obsidian&lt;/h3&gt;
+&lt;p&gt;Now we need to configure Obsidian so we can use it as a blogging platform. This is easy to do because Obsidian allows you to create custom vaults which can pretty much exist anywhere.&lt;/p&gt;
+&lt;p&gt;First thing we need to do is create a new vault in the same folder as the Hugo project.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
