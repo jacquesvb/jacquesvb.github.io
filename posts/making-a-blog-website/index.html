@@ -224,17 +224,85 @@ Hugo - A static website generator. GitHub Pages - Hosts the static website for f
 <p>At least the error message is helpful. All I have to do is go into <code>hugo.tomal</code> and replace <code>paginate</code> with <code>pagination.pagerSize</code>, rerun the server, and I&rsquo;m good as gold!</p>
 <p>In your browser, navigate to <code>localhost:1313</code> and voila!<br>
 <img src="/Attachments/Screenshot_2025-02-17_19-49-54.png" alt="Screenshot\_2025-02-17\_19-49-54.png"></p>
-<h3 id="posts">Posts<a href="#posts" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Now we want to be able to write our posts in Obsidian and then migrate them over to Hugo where it can be turned into a static website and sent to GitHub Pages.</p>
-<p>In your Hugo code, create a posts directory under the content directory.</p>
-<pre tabindex="0"><code>jacques-blog
-		|
-		content
-			|
-			posts	
-</code></pre><h3 id="obsidian">Obsidian<a href="#obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Now we need to configure Obsidian so we can use it as a blogging platform. This is easy to do because Obsidian allows you to create custom vaults which can pretty much exist anywhere.</p>
-<p>First thing we need to do is create a new vault in the same folder as the Hugo project.</p>
+<h3 id="posting-with-obsidian">Posting with Obsidian<a href="#posting-with-obsidian" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Now we have Hugo up and running, it&rsquo;s time to get Obsidian configured so we can write blog posts and migrate them to Hugo.</p>
+<p>First thing we want to do is create a new vault in the same folder as our Hugo folder. In this case, I&rsquo;m calling the Obsidian vault &ldquo;blog&rdquo;.</p>
+<pre tabindex="0"><code>Website (root folder)
+	|
+	jacques-blog (Hugo)
+	|
+	blog (Obsidian)
+</code></pre><p>In Obsidian, create two folders: &ldquo;Attachments&rdquo; and &ldquo;Posts&rdquo;. &ldquo;Attachments&rdquo; will contain the media used in the blog posts and &ldquo;Posts&rdquo; will contain, funnily enough, posts.</p>
+<p>Open the Obsidian options page (click the gear icon at the lower-left of the page) and click on &ldquo;Files and links&rdquo; to configure the following items:</p>
+<ul>
+<li>Default location for new notes
+<ul>
+<li>Select &ldquo;In the folder specified below&rdquo;</li>
+</ul>
+</li>
+<li>Folder to create new notes in
+<ul>
+<li>Select &ldquo;Posts&rdquo;</li>
+</ul>
+</li>
+<li>Default location for new attachments
+<ul>
+<li>Select &ldquo;In the folder specified below&rdquo;</li>
+</ul>
+</li>
+<li>Attachment folder path
+<ul>
+<li>Select &ldquo;Attachments&rdquo;</li>
+</ul>
+</li>
+</ul>
+<p>Click on &ldquo;Community plugins&rdquo;</p>
+<p>To use Community plugins, restricted mode must be turned off. Once that&rsquo;s done, click the &ldquo;Browse&rdquo; button next to Community plugins.</p>
+<p>The two plugins you&rsquo;ll need are &ldquo;<a href="https://github.com/fzdwx/hugo-preview-obsidian">Hugo Preview</a>&rdquo; and &ldquo;<a href="https://github.com/kirito41dd/obsidian-hugo-publish">Hugo Publish</a>&rdquo;. Download and activate both plugins. Navigate back to the Community plugins tab on the Options page.</p>
+<p>When &ldquo;Hugo Preview&rdquo; is activated, you&rsquo;ll see a little blue gopher in the lower right corner of the Obsidian window. Click on the gopher and you&rsquo;ll be treated to a preview of your Hugo site.</p>
+<p>&ldquo;Hugo Publish&rdquo; will publish any posts with the &ldquo;blog&rdquo; tag to Hugo. You can configure the plugin to use a different tag if you wish.</p>
+<p>To configure &ldquo;Hugo Publish&rdquo;, click on the gear icon to configure the following items:</p>
+<ul>
+<li>&ldquo;blog tag&rdquo; is where you specify the tag the plugin uses..</li>
+<li>&ldquo;site dir&rdquo; is where you paste in the absolute path of your Hugo site. I&rsquo;m on Linux, so my path looks like this: &ldquo;/home/jacquesvb/Dropbox/Website/jacques-blog&rdquo;.</li>
+<li>&ldquo;blog dir&rdquo; is where your blog posts will be migrated. Enter &ldquo;/content&rdquo; to select the &ldquo;content&rdquo; folder.</li>
+<li>&ldquo;static dir&rdquo; can be left blank. &ldquo;Attachments&rdquo; will automatically migrated to the &ldquo;static&rdquo; folder.</li>
+</ul>
+<p>Close the &ldquo;Options&rdquo; window and return to the main page. Create a new note and it should appear in the &ldquo;Posts&rdquo; folder. Create a test post. Add an image. At the top of the post you need to add some metadata which looks something like this:</p>
+<pre tabindex="0"><code>---
+title: Making a Bog Website
+date: 2025-02-17
+draft: false
+tags:
+  - blog
+---
+</code></pre><p>This format is called YAML Front Matter. The important element in the example above is &ldquo;tags:&rdquo; where we define the &ldquo;blog&rdquo; tag which will tag the post for migration.</p>
+<p>With the post created and the &ldquo;blog&rdquo; tag attached, click the &ldquo;hugo sync&rdquo; icon on the left border of the Obsidian toolbar. Migration should occur and you should see your blog post appear in the &ldquo;content/Posts&rdquo; folder of your Hugo site.</p>
+<p>Run the Hugo server again if it&rsquo;s not already running.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -t terminal
+</span></span></code></pre></div><p>If everything went well you should see your post on the Hugo site!</p>
+<h2 id="deploying-to-github-pages">Deploying to GitHub Pages<a href="#deploying-to-github-pages" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>To publish a GitHub Page you need, obviously, a GitHub account. Then you&rsquo;ll need to create a repository with the name of your user name  plus .github.io. For example my repo is &ldquo;jacquesvb.github.io&rdquo;. Clone your repo into the folder that contains your Hugo and Obsidian folders, so now my folder looks like this:</p>
+<pre tabindex="0"><code>Website (root folder)
+	|
+	jacques-blog (Hugo)
+	|
+	blog (Obsidian)
+	|
+	jacquesvb.github.io (Git repo)
+</code></pre><p>Now you&rsquo;ll need to build your Hugo project into a static website. From the root of your Hugo folder type <code>hugo</code>. That&rsquo;s it! All the files you need are in the &ldquo;public&rdquo; folder. Now you need to copy them over to your Git repo folder.</p>
+<p>On Windows you can use<code>robocopy</code> to clone one folder into another. Since I&rsquo;m using Linux I&rsquo;ll be using <code>rsync</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --delete <span style="color:#e6db74">&#34;/home/jacquesvb/Dropbox/Website/jacques-blog/public/&#34;</span> <span style="color:#e6db74">&#34;/home/jacquesvb/Dropbox/Website/jacquesvb.github.io/&#34;</span>
+</span></span></code></pre></div><p>Once the files are copied, go into your Git repo, git add, git commit, git push, badda bing, badda boom, your site is published! To test your site, open a browser and enter your GitHub Pages URL (jacquesvb.github.io in my case) and your site should appear. If not check the pages tab under the settings for your Git repo.</p>
+<p>That&rsquo;s it! You now have your very own blog website at no cost.</p>
+<p>Additional things to do:</p>
+<ul>
+<li>Create a bash script to automate deployment</li>
+<li>Custom domain name</li>
+<li>Add a comments section</li>
+<li>Add a calendar</li>
+<li>Other stuff&hellip;</li>
+</ul>
 
       </div></div>
 
